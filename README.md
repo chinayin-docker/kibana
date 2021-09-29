@@ -15,7 +15,7 @@ Kibana is your window into the Elastic Stack. Specifically, it's a browser-based
 
 - `kibana:<version>`
 
-### Use Kibana
+### Usage
 
 You can use the image directly, e.g.
 
