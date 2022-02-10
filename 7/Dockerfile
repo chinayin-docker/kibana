@@ -4,7 +4,7 @@
 #--------------------------------------------------------------------------
 #
 
-ARG ES_VERSION=7.16.2
+ARG ES_VERSION=7.16.3
 FROM kibana:${ES_VERSION}
 LABEL maintainer="chinayin <whereismoney@qq.com>"
 
@@ -16,10 +16,10 @@ ARG TZ=Asia/Shanghai
 ENV TZ ${TZ}
 RUN if [ ${CHANGE_SOURCE} = true ]; then \
     mkdir -p /etc/yum.repos.d/ && \
-    curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-8.repo \
+    curl -o /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-vault-8.5.2111.repo \
 ;fi && ln -snf /usr/share/zoneinfo/${TZ} /etc/localtime && echo ${TZ} > /etc/timezone;
 
-ARG PLUGIN_VERSION=7.16.2
+ARG PLUGIN_VERSION=7.16.3
 RUN set -eux \
     && yum update -y \
     ## alias
