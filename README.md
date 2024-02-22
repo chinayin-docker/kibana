@@ -5,7 +5,8 @@
 ![Docker Image Size (latest semver)](https://img.shields.io/docker/image-size/chinayin/kibana?sort=semver)
 ![Docker Pulls](https://img.shields.io/docker/pulls/chinayin/kibana)
 
-Kibana is your window into the Elastic Stack. Specifically, it's a browser-based analytics and search dashboard for Elasticsearch.
+Kibana is your window into the Elastic Stack. Specifically, it's a browser-based analytics and search dashboard for
+Elasticsearch.
 
 ### Supported tags and respective `Dockerfile` links
 
@@ -20,7 +21,7 @@ Kibana is your window into the Elastic Stack. Specifically, it's a browser-based
 You can use the image directly, e.g.
 
 ```
-docker run --rm -it chinayin/kibana:7
+docker run --rm -it chinayin/kibana:8
 ```
 
 The images are built daily and have the security release enabled, so will contain any security updates released more
@@ -29,5 +30,5 @@ than 24 hours ago.
 You can also use the images as a base for your own Dockerfile:
 
 ```
-FROM chinayin/kibana:7
+FROM chinayin/kibana:8
 ```
