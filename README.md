@@ -14,14 +14,15 @@ Elasticsearch.
 
 ### Image Variants
 
-- `kibana:<version>`
+- `kibana:<version>` — e.g. `9.5.5`, `8.19.23`, `7.17.28`
+- `kibana:<minor>` — e.g. `9`, `8`, `7`
 
 ### Usage
 
 You can use the image directly, e.g.
 
 ```
-docker run --rm -it chinayin/kibana:8
+docker run --rm -it chinayin/kibana:9.5.5
 ```
 
 The images are built daily and have the security release enabled, so will contain any security updates released more
@@ -30,5 +31,5 @@ than 24 hours ago.
 You can also use the images as a base for your own Dockerfile:
 
 ```
-FROM chinayin/kibana:8
+FROM chinayin/kibana:9.5.5
 ```
